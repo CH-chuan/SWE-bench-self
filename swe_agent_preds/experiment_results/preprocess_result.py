@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 
-path = Path("swe_agent_preds/experiment_results/4o_baseline")
+path = Path("swe_agent_preds/experiment_results/4o_no_tips_In_round2")
 file_path = path / "preds.json"
 output_path = path / "all_preds.jsonl"
 
