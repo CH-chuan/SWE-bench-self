@@ -1,4 +1,4 @@
-# Getting Started
+# SWE-bench
 
 <div style="text-align:center">
     <img src="assets/figures/swellama_banner_nobg.svg" alt="Kawi the SWE-Llama" style="max-height: 10em"/>
@@ -11,13 +11,22 @@ SWE-bench is a benchmark for evaluating large language models on real world soft
 Check out the other projects that are part of the SWE-bench ecosystem!
 <div style="text-align:center">
     <a href="https://swe-agent.com">
-        <img src="assets/icons/swe-agent-button.svg" alt="SWE-agent" style="max-height: 5em; border: 2px solid rgb(0, 0, 0); border-radius: 5px; padding: 5px;"/>
+        <img src="https://raw.githubusercontent.com/SWE-agent/swe-agent-media/refs/heads/main/media/logos_banners/sweagent_logo_text_right.svg" alt="SWE-agent" style="max-height: 5em; border: 2px solid rgb(0, 0, 0); border-radius: 5px; padding: 5px;"/>
+    </a>
+    <a href="https://swesmith.com">
+        <img src="https://raw.githubusercontent.com/SWE-agent/swe-agent-media/refs/heads/main/media/logos_banners/swesmith_logo_text_right.svg" alt="SWE-smith" style="max-height: 5em; border: 2px solid rgb(0, 0, 0); border-radius: 5px; padding: 5px;"/>
     </a>
     <a href="https://swe-rex.com">
-        <img src="assets/icons/swe-rex-button.svg" alt="SWE-rex" style="max-height: 5em; border: 2px solid rgb(0, 0, 0); border-radius: 5px; padding: 5px;"/>
+        <img src="https://raw.githubusercontent.com/SWE-agent/swe-agent-media/refs/heads/main/media/logos_banners/swerex_button_text_right.svg" alt="SWE-rex" style="max-height: 5em; border: 2px solid rgb(0, 0, 0); border-radius: 5px; padding: 5px;"/>
+    </a>
+    <a href="https://codeclash.ai">
+        <img src="https://raw.githubusercontent.com/SWE-agent/swe-agent-media/refs/heads/main/media/logos_banners/codeclash_logo_text_right.svg" alt="CodeClash" style="max-height: 5em; border: 2px solid rgb(0, 0, 0); border-radius: 5px; padding: 5px;"/>
     </a>
     <a href="https://swebench.com/sb-cli">
-        <img src="assets/icons/sb-cli-button.svg" alt="SWE-bench CLI" style="max-height: 5em; border: 2px solid rgb(0, 0, 0); border-radius: 5px; padding: 5px;"/>
+        <img src="https://raw.githubusercontent.com/SWE-agent/swe-agent-media/refs/heads/main/media/logos_banners/sbcli_logo_text_right.svg" alt="SWE-bench CLI" style="max-height: 5em; border: 2px solid rgb(0, 0, 0); border-radius: 5px; padding: 5px;"/>
+    </a>
+    <a href="https://mini-swe-agent.com">
+        <img src="assets/icons/mini-swe-agent-banner.svg" alt="mini-swe" style="max-height: 5em; border: 2px solid rgb(0, 0, 0); border-radius: 5px; padding: 5px;"/>
     </a>
 </div>
 
@@ -76,10 +85,10 @@ pip install -e .
 
 | Datasets | Models | RAG |
 | - | - | - |
-| [💿 SWE-bench](https://huggingface.co/datasets/princeton-nlp/SWE-bench) | [🦙 SWE-Llama 13b](https://huggingface.co/princeton-nlp/SWE-Llama-13b) | [🤗 "Oracle" Retrieval](https://huggingface.co/datasets/princeton-nlp/SWE-bench_oracle) |
-| [💿 SWE-bench Lite](https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite) | [🦙 SWE-Llama 13b (PEFT)](https://huggingface.co/princeton-nlp/SWE-Llama-13b-peft) | [🤗 BM25 Retrieval 13K](https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_13K) |
-| [💿 SWE-bench Verified](https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified) | [🦙 SWE-Llama 7b](https://huggingface.co/princeton-nlp/SWE-Llama-7b) | [🤗 BM25 Retrieval 27K](https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_27K) |
-| [💿 SWE-bench Multimodal](https://huggingface.co/datasets/princeton-nlp/SWE-bench_Multimodal) | [🦙 SWE-Llama 7b (PEFT)](https://huggingface.co/princeton-nlp/SWE-Llama-7b-peft) | [🤗 BM25 Retrieval 40K/50K](https://huggingface.co/datasets/princeton-nlp/SWE-bench_bm25_50k_llama) |
+| [💿 SWE-bench](https://huggingface.co/datasets/SWE-bench/SWE-bench) | [🦙 SWE-Llama 13b](https://huggingface.co/princeton-nlp/SWE-Llama-13b) | [🤗 "Oracle" Retrieval](https://huggingface.co/datasets/SWE-bench/SWE-bench_oracle) |
+| [💿 SWE-bench Lite](https://huggingface.co/datasets/SWE-bench/SWE-bench_Lite) | [🦙 SWE-Llama 13b (PEFT)](https://huggingface.co/princeton-nlp/SWE-Llama-13b-peft) | [🤗 BM25 Retrieval 13K](https://huggingface.co/datasets/SWE-bench/SWE-bench_bm25_13K) |
+| [💿 SWE-bench Verified](https://huggingface.co/datasets/SWE-bench/SWE-bench_Verified) | [🦙 SWE-Llama 7b](https://huggingface.co/princeton-nlp/SWE-Llama-7b) | [🤗 BM25 Retrieval 27K](https://huggingface.co/datasets/SWE-bench/SWE-bench_bm25_27K) |
+| [💿 SWE-bench Multimodal](https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal) | [🦙 SWE-Llama 7b (PEFT)](https://huggingface.co/princeton-nlp/SWE-Llama-7b-peft) | [🤗 BM25 Retrieval 40K/50K](https://huggingface.co/datasets/SWE-bench/SWE-bench_bm25_50k_llama) |
 
 ## 💫 Contributing
 

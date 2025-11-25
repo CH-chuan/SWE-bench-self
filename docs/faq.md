@@ -8,15 +8,18 @@ SWE-bench is a benchmark for evaluating large language models on real-world soft
 
 ### Which datasets are available?
 
-SWE-bench offers four main datasets:
+SWE-bench offers five main datasets:
+
 - **SWE-bench**: The full benchmark with 2,294 instances
-- **SWE-bench Lite**: A smaller subset with 534 instances
+- **SWE-bench Lite**: A smaller subset with 300 instances
 - **SWE-bench Verified**: 500 instances verified by engineers as solvable
-- **SWE-bench Multimodal**: 100 _development_ instances with screenshots and UI elements (test eval is on [the SWE-bench API](https://www.swe-bench.com/sb-cli).)
+- **SWE-bench Multimodal**: 100 _development_ instances with screenshots and UI elements (test eval is on [the SWE-bench API](https://www.swebench.com/sb-cli).)
+- **SWE-bench Multilingual**: 300 instances spanning 9 languages and 42 repositories
 
 ### How does the evaluation work?
 
 The evaluation process:
+
 1. Sets up a Docker environment for a repository
 2. Applies the model's generated patch
 3. Runs the repository's test suite
@@ -25,6 +28,7 @@ The evaluation process:
 ### What metrics are reported?
 
 Key metrics include:
+
 - **Total instances**: Number of instances in the dataset
 - **Instances submitted**: Number of instances the model attempted
 - **Instances completed**: Number of instances that completed the evaluation process
@@ -64,8 +68,8 @@ from swebench.harness.run_evaluation import run_evaluation
 predictions = [
     {
         "instance_id": "repo_owner_name__repo_name-issue_number",
-        "model": "my-model-name",
-        "prediction": "code patch here"
+        "model_name_or_path": "my-model-name",
+        "model_patch": "code patch here"
     }
 ]
 
