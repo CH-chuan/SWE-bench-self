@@ -157,6 +157,8 @@ def run_instance(
 
         # Copy model prediction as patch file to container
         patch_file = Path(log_dir / "patch.diff")
+        # add an empty new line at the end of the patch
+        pred[KEY_PREDICTION] = pred[KEY_PREDICTION] + "\n"
         patch_file.write_text(pred[KEY_PREDICTION] or "")
         logger.info(
             f"Intermediate patch for {instance_id} written to {patch_file}, now applying to container..."
@@ -574,6 +576,7 @@ def main(
         namespace,
         instance_image_tag,
         env_image_tag,
+        report_dir,
     )
 
 
